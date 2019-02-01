@@ -1,0 +1,21 @@
+language: c++
+os: macOS Mojave
+dist: trusty
+sudo: false
+
+notifications:
+  email:
+    recipients: ssanjan@ncsu.edu
+    on_success: change
+    on_failure: always
+
+addons:	
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-5
+    - python3
+
+script:
+- cd hellotest; g++ helloworld.cpp; python runhello.py
