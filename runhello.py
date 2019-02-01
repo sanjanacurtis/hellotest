@@ -11,4 +11,4 @@ stdout = process.communicate()[0]
 if stdout==expout:
 	print("tests ok")
 else:
-	print("error in commit")
+	raise Exception("FAILURE")
