@@ -18,4 +18,4 @@ addons:
     - python3
 
 script:
-- cd hellotest; g++ helloworld.cpp; python runhello.py
+- g++ helloworld.cpp; python runhello.py
